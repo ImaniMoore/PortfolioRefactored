@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home | Imani Moore</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="min-h-screen bg-white flex flex-col">
+    <!-- Navbar -->
+    <nav class="bg-pink-600 text-white py-4 shadow">
+      <ul
+        class="max-w-5xl mx-auto flex gap-6 justify-center font-semibold text-lg"
+      >
+        <li><a href="../pages/home.html" class="hover:underline">Home</a></li>
+        <li>
+          <a href="../pages/reflection.html" class="hover:underline"
+            >Reflection</a
+          >
+        </li>
+        <li>
+          <a href="../pages/resume.html" class="hover:underline">Resume</a>
+        </li>
+        <li>
+          <a href="../pages/contact.html" class="hover:underline">Contact</a>
+        </li>
+        <li>
+          <a href="../Reflection_CSS/index.html" class="hover:underline"
+            >Portfolio</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative w-full h-[70vh] flex items-center justify-center">
+      <img
+        src="../images/ImaniMoore.jpg"
+        alt="Photo of Imani Moore"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+      <div class="absolute inset-0 bg-white/40"></div>
+      <div class="relative text-center">
+        <h1
+          class="text-3xl md:text-5xl font-bold text-pink-700 [text-stroke:2px_#f472b6] mb-4"
+        >
+          Imani Moore
+        </h1>
+        <a
+          href="./reflection.html"
+          class="bg-pink-600 text-white px-6 py-2 rounded-lg hover:bg-pink-700 transition"
+        >
+          Reflection Page
+        </a>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section
+      class="cardContainer justify-center display-grid gap-6 max-w-4xl mx-auto p-6 bg-pink-100 rounded-lg shadow-md my-8 text-center"
+    >
+      <div class="card">
+        <h2 class="text-xl font-bold mb-4">About Me</h2>
+        <p class="text-medium">
+          I started my career in banking, working in business sales and later as
+          a personal banker. I loved helping clients understand their options
+          and guiding them toward financial solutions that truly supported their
+          goals. After banking, I joined the City of Charlotte as a 311
+          representative, where I developed strong communication skills and
+          learned how to problem solve quickly while supporting citizens across
+          the city. As of today, I am a coding apprentice, building my technical
+          skills and exploring opportunities in the tech industry. I’m
+          passionate about learning, improving every day, and creating solutions
+          that make people’s lives easier. Outside of work, I enjoy traveling,
+          discovering new places, and finding balance between motherhood and
+          pursuing my career goals.
+        </p>
+      </div>
+    </section>
+
+    <!-- Slideshow Section -->
+    <section class="w-full py-10 text-center">
+      <h2 class="text-3xl font-bold mb-8">Slideshow</h2>
+      <div
+        class="relative mx-auto overflow-hidden rounded-lg slideshow-container"
+      >
+        <img src="../images/image1.jpeg" alt="Slide 1" class="slide" />
+        <img src="../images/image2.jpeg" alt="Slide 2" class="slide" />
+        <img src="../images/image3.png" alt="Slide 3" class="slide" />
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-pink-600 text-white py-4 mt-auto text-center">
+      <a
+        href="https://www.facebook.com/share/1AH73ooFQU/?mibextid=wwXlfr"
+        class="fa fa-facebook mx-2"
+      ></a>
+      <a href="https://www.instagram.com/" class="fa fa-instagram mx-2"></a>
+    </footer>
+
+    <script src="../index.js"></script>
+  </body>
+</html>

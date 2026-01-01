@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced CSS Reflection | Imani Moore</title>
+
+    <!-- Your stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 min-h-screen flex flex-col">
+    <!-- Navbar-->
+    <nav class="bg-pink-600 text-white py-4 shadow">
+      <ul
+        class="max-w-5xl mx-auto flex gap-6 justify-center font-semibold text-lg"
+      >
+        <li>
+          <a href="../pages/home.html" class="hover:underline">Home</a>
+        </li>
+        <li>
+          <a href="../pages/reflection.html" class="hover:underline"
+            >Reflection</a
+          >
+        </li>
+        <li>
+          <a href="../pages/resume.html" class="hover:underline">Resume</a>
+        </li>
+        <li>
+          <a href="../pages/contact.html" class="hover:underline">Contact</a>
+        </li>
+        <li>
+          <a href="./index.html" class="hover:underline">Portfolio</a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="max-w-5xl mx-auto px-4 py-10 text-center">
+      <h1 class="text-3xl font-bold mb-2">Portfolio</h1>
+      <p class="text-gray-600">
+        A showcase of my work, highlighting design, usability, and code quality.
+      </p>
+    </header>
+
+    <!-- Project Cards -->
+    <main class="max-w-5xl mx-auto px-4 pb-16 w-full">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 gap-10 projects__grid"
+        aria-label="Project Cards">
+        <div class="card bg-white shadow rounded-2xl overflow-hidden">
+          <div class="card__inner">
+            <div class="card__front">
+              <div class="aspect-[3/2] overflow-hidden">
+                <img
+                  src="../images/Ecommerce.png"
+                  alt="Screenshot of E-Commerce project"
+                />
+              </div>
+            </div>
+
+            <div class="card__back p-5">
+              <h3 class="card__name text-xl font-semibold mb-2">E-Commerce</h3>
+              <p class="card__description text-gray-700">
+                For the eCommerce project, I structured the site using semantic,
+                accessible HTML. CSS provided a clean, consistent design, while
+                JavaScript handled basic validation and usability. The site is
+                responsive and deployed with AWS Amplify, demonstrating both
+                technical skills and design thinking.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white shadow rounded-2xl overflow-hidden">
+          <div class="card__inner">
+            <div class="card__front">
+              <div class="aspect-[3/2] overflow-hidden">
+                <img
+                  src="../images/Game.png"
+                  alt="Rock Paper Scissors game interface"
+                  class="card__image w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="card__back p-5">
+              <h3 class="card__name text-xl font-semibold mb-2">
+                Rock, Paper, Scissors
+              </h3>
+              <p class="card__description text-gray-700">
+                I built a Rock, Paper, Scissors game using HTML, CSS, and
+                JavaScript. The app validates input, generates random computer
+                choices, and dynamically displays the winner. I focused on clear
+                naming, consistent formatting, and helpful comments.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white shadow rounded-2xl overflow-hidden">
+          <div class="card__inner">
+            <div class="card__front">
+              <div class="aspect-[3/2] overflow-hidden">
+                <img
+                  src="../images/Calculator.png"
+                  alt="Functional calculator app"
+                  class="card__image w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="card__back p-5">
+              <h3 class="card__name text-xl font-semibold mb-2">Calculator</h3>
+              <p class="card__description text-gray-700">
+                I created a responsive calculator that supports keyboard and
+                button input. It handles division by zero safely, uses a grid
+                layout, and maintains clean, commented code.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white shadow rounded-2xl overflow-hidden">
+          <div class="card__inner">
+            <div class="card__front">
+              <div class="aspect-[3/2] overflow-hidden">
+                <img
+                  src="../images/CRIZ.png"
+                  alt="Code For Justice website contact page"
+                  class="card__image w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="card__back p-5">
+              <h3 class="card__name text-xl font-semibold mb-2">
+                Code For Justice
+              </h3>
+              <p class="card__description text-gray-700">
+                I developed the Contact Page with JavaScript form validation and
+                styled it using Sass, improving usability and maintainability.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white shadow rounded-2xl overflow-hidden">
+          <div class="card__inner">
+            <div class="card__front">
+              <div class="aspect-[3/2] overflow-hidden">
+                <img
+                  src="../images/Google.png"
+                  alt="Recreated Google homepage"
+                  class="card__image w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="card__back p-5">
+              <h3 class="card__name text-xl font-semibold mb-2">Google</h3>
+              <p class="card__description text-gray-700">
+                I recreated the Google homepage using semantic HTML, Sass, and
+                JavaScript, reinforcing accessibility, structure, and basic
+                interactivity.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white shadow rounded-2xl overflow-hidden">
+          <div class="card__inner">
+            <div class="card__front">
+              <div class="aspect-[3/2] overflow-hidden">
+                <img
+                  src="../images/Budget.png"
+                  alt="Budget Tracker app"
+                  class="card__image w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="card__back p-5">
+              <h3 class="card__name text-xl font-semibold mb-2">Budget</h3>
+              <p class="card__description text-gray-700">
+                I built a Budget Tracker using JavaScript, OOP concepts, and
+                SASS variables/mixins,  focusing on usability, clarity, and
+                responsive design.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-pink-600 text-white py-4 mt-auto text-center">
+      <a
+        href="https://www.facebook.com/share/1AH73ooFQU/?mibextid=wwXlfr"
+        class="fa fa-facebook mx-2"
+        aria-label="Facebook"
+      ></a>
+      <a
+        href="https://www.instagram.com/"
+        class="fa fa-instagram mx-2"
+        aria-label="Instagram"
+      ></a>
+    </footer>
+  </body>
+</html>
