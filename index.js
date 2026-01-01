@@ -1,38 +1,38 @@
-//Form Validation
 function validateForm(event) {
   event.preventDefault();
 
   const form = document.forms["myForm"];
-  const name = form["name"].value;
-  const email = form["email"].value;
-  const message = form["message"].value;
-  const phone = form["phone"].value;
+  const name = form["name"].value.trim();
+  const email = form["email"].value.trim();
+  const message = form["message"].value.trim();
+  const phone = form["phone"].value.trim();
 
   const errorBox = document.getElementById("formError");
+  let errors = [];
 
-  function showError(message) {
-    errorBox.textContent = message;
+  if (!name) errors.push("Name must be filled out");
+  if (!phone) errors.push("Phone Number must be filled out");
+  if (!email) errors.push("Email must be filled out");
+  if (!message) errors.push("Message must be entered");
+
+  if (errors.length > 0) {
+    errorBox.innerHTML = errors.join("<br>");
     errorBox.classList.remove("hidden");
-  }
-  if (!name) {
-    showError("Name must be filled out");
+    return; // Stop execution if there are errors
   }
 
-  if (!phone) {
-    showError("Phone Number must be filled out");
-  }
+  // Clear any previous errors
+  errorBox.classList.add("hidden");
 
-  if (!email) {
-    showError("Email must be filled out");
-  }
-
-  if (!message) {
-    showError("Message must be entered");
-  }
-  form.innerHTML = `<div class="text-center space-y-2">
-<h3 class="text-x1 font-bold text-pink-600"> Thank you for reaching out, ${name}!</h3>
-<p class="text-pink-200"> I will get back to you as soon as possible.</p>
-</div>`;
+  // Show thank-you message
+  form.innerHTML = `
+    <div class="text-center space-y-2">
+      <h3 class="text-xl font-bold text-pink-600">
+        Thank you for reaching out, ${name}!
+      </h3>
+      <p class="text-pink-200">I will get back to you as soon as possible.</p>
+    </div>
+  `;
 }
 
 document.getElementById("contactForm").addEventListener("submit", validateForm);
